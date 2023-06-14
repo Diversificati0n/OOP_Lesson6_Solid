@@ -1,11 +1,5 @@
-public class Persister{
-	private User user;
-	
-	public Persister(User user){
-		this.user = user;
-	}
-	
-	public void save(){
+public class Persister implements DataSaver {
+	public void save(User user) {
 		System.out.println("Save user: " + user.getName());
 	}
 }
